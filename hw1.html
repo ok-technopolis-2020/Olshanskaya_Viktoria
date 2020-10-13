@@ -5,41 +5,64 @@
 	<title>todo</title>
 </head>
 
-<body>
-	<h1>todos</h1>
-	<button> Y </button>
-	<input value = "What needs to be done?">
+<body> 
+	<div class="main_body">
+		<header class="header_todos">todos</header>
+		<section class="section_add_new">
+			<button class="button_add_new"> Y </button>
+			<input value="What needs to be done?">
+		</section>
+		<section class="section_list">
+			<ul>
+		  		<li>
+		  			<div class="list_element">
+		  				<input class="list_checkbox" type="checkbox">
+		  				<span class="list_name_task">HTML</span>
+		  				<button class="list_delete_element">Delete task</button>  				
+		  			</div>s
+		  		</li>
+		  		<li>
+		  			<div class="list_element">
+		  				<input class="list_checkbox" type="checkbox" checked>
+		  				<span class="list_name_task">CSS</span>
+		  				<button class="list_delete_element">Delete task</button>  				
+		  			</div>
+		  		</li>
+		  		<li>
+		  			<div class="list_element">
+		  				<input class="list_checkbox" type="checkbox">
+		  				<span class="list_name_task">JS</span>
+		  				<button class="list_delete_element">Delete task</button>  				
+		  			</div>
+		  		</li>
+		  		<li>
+		  			<div class="list_element">
+		  				<input class="list_checkbox" type="checkbox">
+		  				<span class="list_name_task">JS tools</span>
+		  				<button class="list_delete_element">Delete task</button>  				
+		  			</div>
+		  		</li>
+			</ul>
+		</section>
 
-	<table>
-	<tr> 
-		<td> <input type="checkbox" > </td>
-		<td> HTML  </td>
-		<td> <button>x</button> </td>
-	</tr>
-	<tr> 
-		<td> <input type="checkbox" checked> </td>
-		<td> CSS </td>
-		<td> <button>x</button> </td>
-	</tr>
-	<tr> 
-		<td> <input type="checkbox" > </td>
-		<td> JS </td>
-		<td> <button>x</button> </td>
-	</tr>
-	<tr> 
-		<td> <input type="checkbox" > </td>
-		<td> JS tools </td>
-		<td> <button>x</button> </td>
-	</tr>
-	</table>
+		<footer>
+			<div class="active_task">
+				3 items left
+			</div>
+			<div class="type_task">
+				<input type="radio" name="type" >
+            	<label for="type_all">All</label>
+            	<input type="radio" name="type" >
+            	<label for="type_active">Active</label>
+            	<input type="radio" name="type" >
+            	<label for="type_completed">Completed</label>
+			</div>
+			<div class="clear_completed">
+            	<button type="button_clear_completed">Clear completed</button>
+          	</div>
 
-	
-	<text>3 items left</text>
-	<button>All</button>
-	<button>Active</button>
-	<button>Completed</button>
-	<button>Clear completed</button>
+		</footer>
 
-
+	</div>
 </body>
 </html>
