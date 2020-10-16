@@ -7,58 +7,58 @@
 
 <body> 
 	<div class="main_body">
-		<header class="header_todos">todos</header>
+		<header class="header_todos" aria-label="todos">todos</header>
 		<section class="section_add_new">
-			<button class="button_add_new"> Y </button>
-			<input value="What needs to be done?">
+			<button class="button_add_new" aria-label="new task"> Y </button>
+			<input value="What needs to be done?" aria-label="Write here new task">
 		</section>
 		<section class="section_list">
 			<ul>
 		  		<li>
 		  			<div class="list_element">
-		  				<input class="list_checkbox" type="checkbox">
+		  				<input class="list_checkbox" type="checkbox" aria-label="comleted">
 		  				<span class="list_name_task">HTML</span>
-		  				<button class="list_delete_element">Delete task</button>  				
+		  				<button class="list_delete_element" aria-label="delete task">Delete task</button>  				
 		  			</div>
 		  		</li>
 		  		<li>
 		  			<div class="list_element">
-		  				<input class="list_checkbox" type="checkbox" checked>
+		  				<input class="list_checkbox" type="checkbox" checked aria-label="comleted">
 		  				<span class="list_name_task">CSS</span>
-		  				<button class="list_delete_element">Delete task</button>  				
+		  				<button class="list_delete_element" aria-label="delete task">Delete task</button>  				
 		  			</div>
 		  		</li>
 		  		<li>
 		  			<div class="list_element">
-		  				<input class="list_checkbox" type="checkbox">
+		  				<input class="list_checkbox" type="checkbox" aria-label="comleted">
 		  				<span class="list_name_task">JS</span>
-		  				<button class="list_delete_element">Delete task</button>  				
+		  				<button class="list_delete_element" aria-label="delete task">Delete task</button>  				
 		  			</div>
 		  		</li>
 		  		<li>
 		  			<div class="list_element">
-		  				<input class="list_checkbox" type="checkbox">
+		  				<input class="list_checkbox" type="checkbox" aria-label="comleted">
 		  				<span class="list_name_task">JS tools</span>
-		  				<button class="list_delete_element">Delete task</button>  				
+		  				<button class="list_delete_element" aria-label="delete task" >Delete task</button>  				
 		  			</div>
 		  		</li>
 			</ul>
 		</section>
 
 		<footer>
-			<div class="active_task">
+			<div class="active_task" aria-label="count active task">
 				3 items left
 			</div>
 			<div class="type_task">
-				<input type="radio" name="type" >
+				<input type="radio" name="type" aria-label="all tasks">
             	<label for="type_all">All</label>
-            	<input type="radio" name="type" >
+            	<input type="radio" name="type" aria-label="active tasks">
             	<label for="type_active">Active</label>
-            	<input type="radio" name="type" >
+            	<input type="radio" name="type" aria-label="comleted tasks">
             	<label for="type_completed">Completed</label>
 			</div>
 			<div class="clear_completed">
-            	<button type="button_clear_completed">Clear completed</button>
+            	<button class="button_clear_completed" aria-label="Clear completed tasks">Clear completed</button>
           	</div>
 
 		</footer>
